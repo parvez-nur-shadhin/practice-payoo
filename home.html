@@ -91,6 +91,7 @@
           <h2 class="font-normal opacity-70">Add Money</h2>
         </button>
         <button
+          onclick="showOnly('cashout')"
           id="btn-cashout"
           class="btn btn-outline flex flex-col gap-1 h-full p-3 rounded-md border-black/10 bg-base-100"
         >
@@ -188,9 +189,58 @@
       </div>
     </section>
 
-    
+    <!-- Cash Out Form -->
+    <section id="cashout" class="pt-[10px] pb-4 hidden">
+      <h2 class="font-semibold text-[18px] p-2">Cashout</h2>
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-sm mx-auto">
+        <div class="card-body">
+            <label class="label font-bold text-black"
+              >Agent Number</label
+            >
+            <input
+              maxlength="11"
+              minlength="11"
+              id="cashout-number"
+              type="text"
+              class="input w-full rounded-full"
+              placeholder="Enter 11 digit account number"
+            />
+            <br />
+            <label class="label font-bold text-black"
+              >Amount</label
+            >
+            <input
+              maxlength="11"
+              minlength="11"
+              id="cashout-amount"
+              type="number"
+              class="input w-full rounded-full"
+              placeholder="Amount To Withdraw"
+            />
+            <br />
+            <label class="label font-bold text-black">Pin Number</label>
+            <input
+              maxlength="4"
+              minlength="4"
+              id="cashout-pin"
+              type="password"
+              class="input w-full rounded-full"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button
+              id="cashout-button"
+              class="btn btn-primary w-full rounded-full mt-4"
+            >
+              Withdraw Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <!-- Javascript Area -->
     <script src="./Javascript/machines.js"></script>
     <script src="./Javascript/addmoney.js"></script>
+    <script src="./Javascript/cashout.js"></script>
   </body>
 </html>

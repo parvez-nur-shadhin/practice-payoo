@@ -18,9 +18,11 @@ function getElementValues(id){
 function showOnly(id) {
     // 1. pulling the section;
     const addMoney = document.getElementById('add-money');
+    const cashout = document.getElementById('cashout');
 
     // 2. putting the hidden class
     addMoney.classList.add('hidden');
+    cashout.classList.add('hidden');
 
     // 3. removing Hidden
     const showOnly = document.getElementById(id);
