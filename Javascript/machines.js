@@ -19,11 +19,13 @@ function showOnly(id) {
     // 1. pulling the section;
     const addMoney = document.getElementById('add-money');
     const cashout = document.getElementById('cashout');
+    const transaction = document.getElementById('transaction');
 
     // 2. putting the hidden class
     addMoney.classList.add('hidden');
     cashout.classList.add('hidden');
-
+    transaction.classList.add('hidden');
+    
     // 3. removing Hidden
     const showOnly = document.getElementById(id);
     showOnly.classList.remove('hidden');

@@ -120,6 +120,7 @@
           <h2 class="font-normal opacity-70">Pay Bill</h2>
         </button>
         <button
+          onclick="showOnly('transaction')"
           id="transactions"
           class="btn btn-outline flex flex-col gap-1 h-full p-3 rounded-md border-black/10 bg-base-100"
         >
@@ -237,6 +238,16 @@
         </div>
       </div>
     </section>
+
+    <!-- Transaction Section -->
+    <section id="transaction" class="pt-[10px] pb-4 hidden">
+      <h2 class="font-semibold text-[18px] p-2">Transaction</h2>
+      <div id="card-container" class="card w-full max-w-sm shrink-0 shadow-sm mx-auto">
+
+      </div>
+    </section>
+
+
 
     <!-- Javascript Area -->
     <script src="./Javascript/machines.js"></script>

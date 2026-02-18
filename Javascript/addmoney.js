@@ -26,6 +26,24 @@ document
       const newAmount = Number(money) + Number(amountToAdd);
       // 5. adding new amount into balance
       moneyElem.innerText = newAmount;
+
+      /**
+       * Transaction History
+       */
+      // pulling the card container
+      const histroyContainer = document.getElementById("card-container");
+
+      // creating new element
+      const newDiv = document.createElement("div");
+      newDiv.innerHTML = `
+      <div class="card-body p-5 bg-base-100">
+            You Have added ${amountToAdd} dollar in your account.
+            at ${new Date()}.
+      </div>
+      `;
+      // appending element in the transaction container
+      histroyContainer.appendChild(newDiv);
+
       alert("Money Added Successfully");
     } else {
       alert("Pin is not Correct");

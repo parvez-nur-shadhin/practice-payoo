@@ -24,6 +24,23 @@ document.getElementById('cashout-button').addEventListener('click', function(){
         // 5. Replacing recent Amount
         amountElementChange.innerText = newAmount;
 
+        /**
+       * Transaction History
+       */
+      // pulling the card container
+      const histroyContainer = document.getElementById("card-container");
+
+      // creating new element
+      const newDiv = document.createElement("div");
+      newDiv.innerHTML = `
+      <div class="card-body p-5 bg-base-100">
+            You Have deducted ${amount} dollar in your account.
+            at ${new Date()}.
+      </div>
+      `;
+      // appending element in the transaction container
+        histroyContainer.appendChild(newDiv);
+
         alert('Cashout Successful');
     }
     else{
