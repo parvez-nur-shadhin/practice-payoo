@@ -1,11 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Daisy UI + Tailwind CSS + Daisy UI theme -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Theme -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Styling -->
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+
     <title>Login || Payoo</title>
-</head>
-<body>
-    
-</body>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  </head>
+  <body class="min-h-screen max-w-md mx-auto bg-base-300 rounded-md">
+    <!-- Logo Section -->
+    <section>
+      <div class="pt-[210px]">
+        <img
+          class="mx-auto"
+          src="./assets/Logo-full.png"
+          alt="payoo-full-logo"
+        />
+      </div>
+    </section>
+
+    <!-- Form Section -->
+     <section class="pt-[32px]">
+         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
+           <div class="card-body">
+             <fieldset class="fieldset">
+               <label class="label font-bold text-black">Mobile Number</label>
+               <input maxlength="11" minlength="11" id="login-phone-number" type="email" class="input w-full rounded-full" placeholder="Enter Your Mobile Number" />
+               <br>
+               <label class="label  font-bold text-black">4 Digit Pin</label>
+               <input maxlength="4" minlength="4" id="login-password" type="password" class="input w-full rounded-full " placeholder="Enter 4 Digit Pin" />
+               <button id="login-button" class="btn btn-primary w-full rounded-full mt-4">Login</button>
+             </fieldset>
+           </div>
+         </div>
+     </section>
+
+
+     <!-- Javascript Area -->
+    <script src="./Javascript/machines.js"></script>
+    <script src="./Javascript/login.js"></script>
+  </body>
 </html>
