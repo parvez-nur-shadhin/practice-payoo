@@ -99,7 +99,8 @@
           <h2 class="font-normal opacity-70">Cashout</h2>
         </button>
         <button
-          id="transfer-money"
+          onclick="showOnly('transfer-money')"
+          id="btn-transfer-money"
           class="btn btn-outline flex flex-col gap-1 h-full p-3 rounded-md border-black/10 bg-base-100"
         >
           <img src="./assets/opt-3.png" alt="" />
@@ -239,6 +240,55 @@
       </div>
     </section>
 
+    <!-- Transfer Money Section -->
+    <section id="transfer-money" class="pt-[10px] pb-4 hidden">
+      <h2 class="font-semibold text-[18px] p-2">Transfer Money</h2>
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-sm mx-auto">
+        <div class="card-body">
+            <label class="label font-bold text-black"
+              >User Account Number</label
+            >
+            <input
+              maxlength="11"
+              minlength="11"
+              id="transfer-money-number"
+              type="text"
+              class="input w-full rounded-full"
+              placeholder="Enter 11 digit number"
+            />
+            <br />
+            <label class="label font-bold text-black"
+              >Amount</label
+            >
+            <input
+              maxlength="11"
+              minlength="11"
+              id="transfer-money-amount"
+              type="number"
+              class="input w-full rounded-full"
+              placeholder="Enter amount to transfer"
+            />
+            <br />
+            <label class="label font-bold text-black">Pin Number</label>
+            <input
+              maxlength="4"
+              minlength="4"
+              id="transfer-money-pin"
+              type="password"
+              class="input w-full rounded-full"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button
+              id="transfer-money-button"
+              class="btn btn-primary w-full rounded-full mt-4"
+            >
+              Send Now
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <!-- Transaction Section -->
     <section id="transaction" class="pt-[10px] pb-4 hidden">
       <h2 class="font-semibold text-[18px] p-2">Transaction</h2>
@@ -247,11 +297,14 @@
       </div>
     </section>
 
+    
+
 
 
     <!-- Javascript Area -->
     <script src="./Javascript/machines.js"></script>
     <script src="./Javascript/addmoney.js"></script>
     <script src="./Javascript/cashout.js"></script>
+    <script src="./Javascript/transfer-money.js"></script>
   </body>
 </html>
