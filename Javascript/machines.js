@@ -22,6 +22,7 @@ function showOnly(id) {
     const transaction = document.getElementById('transaction');
     const transferMoney = document.getElementById('transfer-money');
     const getBonus = document.getElementById('get-bonus');
+    const payment =document.getElementById('payment');
 
     // 2. putting the hidden class
     addMoney.classList.add('hidden');
@@ -29,6 +30,8 @@ function showOnly(id) {
     transaction.classList.add('hidden');
     transferMoney.classList.add('hidden');
     getBonus.classList.add('hidden');
+    payment.classList.add('hidden');
+
     
     // 3. removing Hidden
     const showOnly = document.getElementById(id);
