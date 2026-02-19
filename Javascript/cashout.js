@@ -33,7 +33,7 @@ document.getElementById('cashout-button').addEventListener('click', function(){
       // creating new element
       const newDiv = document.createElement("div");
       newDiv.innerHTML = `
-      <div class="card-body p-5 bg-base-100">
+      <div class="card-body p-5 bg-base-100 mt-3 rounded-lg">
             You Have deducted ${amount} dollar in your account.
             at ${new Date()}.
       </div>

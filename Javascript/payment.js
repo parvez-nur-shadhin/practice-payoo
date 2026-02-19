@@ -85,8 +85,11 @@ document.getElementById('payment-button').addEventListener('click', function(){
 
 
         BalanceElement.innerText = newBalance;
+        alert('Payment Successful');
+        return;
     }
     else{
-        alert('Your pin is not correct')
+        alert('Your pin is not correct');
+        return;
     }
 });

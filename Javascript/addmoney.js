@@ -36,7 +36,7 @@ document
       // creating new element
       const newDiv = document.createElement("div");
       newDiv.innerHTML = `
-      <div class="card-body p-5 bg-base-100">
+      <div class="card-body p-5 bg-base-100 mt-3 rounded-lg">
             You Have added ${amountToAdd} dollar in your account.
             at ${new Date()}.
       </div>
