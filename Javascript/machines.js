@@ -21,12 +21,14 @@ function showOnly(id) {
     const cashout = document.getElementById('cashout');
     const transaction = document.getElementById('transaction');
     const transferMoney = document.getElementById('transfer-money');
+    const getBonus = document.getElementById('get-bonus');
 
     // 2. putting the hidden class
     addMoney.classList.add('hidden');
     cashout.classList.add('hidden');
     transaction.classList.add('hidden');
     transferMoney.classList.add('hidden');
+    getBonus.classList.add('hidden');
     
     // 3. removing Hidden
     const showOnly = document.getElementById(id);

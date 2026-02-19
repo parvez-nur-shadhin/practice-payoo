@@ -41,5 +41,10 @@ document.getElementById('transfer-money-button').addEventListener('click', funct
         histroyContainer.appendChild(newDiv);
 
         alert('Transfer Money Successful');
+        return;
+    }
+    else{
+        alert('Your Pin is wrong');
+        return;
     }
 });

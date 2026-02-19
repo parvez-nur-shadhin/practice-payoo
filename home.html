@@ -107,7 +107,8 @@
           <h2 class="font-normal opacity-70">Transfer Money</h2>
         </button>
         <button
-          id="get-bonus"
+          onclick="showOnly('get-bonus')"
+          id="btn-get-bonus"
           class="btn btn-outline flex flex-col gap-1 h-full p-3 rounded-md border-black/10 bg-base-100"
         >
           <img src="./assets/opt-4.png" alt="" />
@@ -289,6 +290,31 @@
       </div>
     </section>
 
+    <!-- Get Bonus Section -->
+    <section id="get-bonus" class="pt-[10px] pb-4 hidden">
+      <h2 class="font-semibold text-[18px] p-2">Get Bonus</h2>
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-sm mx-auto">
+        <div class="card-body">
+            <label class="label font-bold text-black"
+              >Enter Bonus Coupon</label
+            >
+            <input
+              id="get-bonus-coupon"
+              type="text"
+              class="input w-full rounded-full"
+              placeholder="Enter your coupon"
+            />
+            <button
+              id="get-bonus-button"
+              class="btn btn-primary w-full rounded-full mt-4"
+            >
+              Get Bonus
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <!-- Transaction Section -->
     <section id="transaction" class="pt-[10px] pb-4 hidden">
       <h2 class="font-semibold text-[18px] p-2">Transaction</h2>
@@ -306,5 +332,6 @@
     <script src="./Javascript/addmoney.js"></script>
     <script src="./Javascript/cashout.js"></script>
     <script src="./Javascript/transfer-money.js"></script>
+    <script src="./Javascript/get-bonus.js"></script>
   </body>
 </html>
