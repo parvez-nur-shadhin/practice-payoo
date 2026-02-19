@@ -1,14 +1,12 @@
 document.getElementById('payment-button').addEventListener('click', function(){
     // 1 -> get the payment type
     const paymentType = getInputValues('payment-type-name');
-    console.log(paymentType);
     if (paymentType === 'Select Payment Option'){
         alert('Select Payment Type');
         return;
     }
     // 2 -> get the biller account number and validate
     const accountNumber = getInputValues('payment-number');
-    console.log(accountNumber);
     if(accountNumber.length != 11){
         alert('Number is Invalid');
         return;
